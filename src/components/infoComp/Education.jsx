@@ -24,7 +24,7 @@ const Education = (props) => {
     <React.Fragment>
       <div className="masterClass">
         <Header />
-        <div className="infoSpace animate__animated animate__fadeIn">
+        <div className="infoSpace">
           <div className="rHeaderSpace">
             <span className="routHeader">Education</span>
           </div>
@@ -119,8 +119,9 @@ const Education = (props) => {
     </React.Fragment>
   );
   function handleSubmit(e) {
+    console.log(e);
     e.preventDefault();
-    e.target.reset();
+
     setAvailable(true);
     getEducation(formik.values.education);
   }

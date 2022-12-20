@@ -33,6 +33,7 @@ const Occupation = (props) => {
                   Occupation Title
                 </label>
                 <input
+                  required
                   className="form-control"
                   name="occupation.occupationtitle"
                   type="text"
@@ -44,6 +45,7 @@ const Occupation = (props) => {
                   Occupation Description
                 </label>
                 <input
+                  required
                   className="form-control"
                   name="occupation.occupationDescription"
                   type="text"
@@ -55,6 +57,7 @@ const Occupation = (props) => {
                   Military Service
                 </label>
                 <input
+                  required
                   className="form-control"
                   name="occupation.militaryService"
                   type="text"
@@ -66,6 +69,7 @@ const Occupation = (props) => {
                   Link
                 </label>
                 <input
+                  required
                   className="form-control"
                   name="occupation.link"
                   type="text"
@@ -95,7 +99,7 @@ const Occupation = (props) => {
   );
   function handleSubmit(e) {
     e.preventDefault();
-    e.target.reset();
+    // e.target.reset();
     getOccInfo(formik.values.occupation);
     setAvailable(true);
   }

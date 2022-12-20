@@ -150,7 +150,7 @@ const Preview = (props) => {
 let printHtml = () => {
   var data = document.getElementById("pdfpreview");
   var canvas = document.createElement("canvas");
-  canvas.width = 730;
+  canvas.width = 550;
   canvas.height = 1050;
 
   var options = {

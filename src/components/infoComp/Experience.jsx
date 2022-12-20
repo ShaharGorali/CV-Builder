@@ -125,6 +125,7 @@ const Experience = (props) => {
   function handleSubmit(e) {
     e.preventDefault();
     e.target.reset();
+    console.log(e)
     getExperience(formik.values.experience);
     setAvailable(true);
   }

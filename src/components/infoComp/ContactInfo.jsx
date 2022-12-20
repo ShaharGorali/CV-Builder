@@ -40,6 +40,7 @@ const ContactInfo = (props) => {
                   Name
                 </label>
                 <input
+                  required
                   className="form-control"
                   name="contactInfo.name"
                   type="text"
@@ -51,6 +52,7 @@ const ContactInfo = (props) => {
                   Last name
                 </label>
                 <input
+                  required
                   className="form-control"
                   name="contactInfo.lastName"
                   type="text"
@@ -62,6 +64,7 @@ const ContactInfo = (props) => {
                   Email
                 </label>
                 <input
+                  required
                   className="form-control"
                   name="contactInfo.email"
                   type="email"
@@ -73,6 +76,7 @@ const ContactInfo = (props) => {
                   Phone
                 </label>
                 <input
+                  required
                   className="form-control"
                   name="contactInfo.phoneNumber"
                   type="text"
@@ -86,6 +90,7 @@ const ContactInfo = (props) => {
                   Country
                 </label>
                 <input
+                  required
                   className="form-control"
                   name="contactInfo.address.country"
                   type="text"
@@ -97,6 +102,7 @@ const ContactInfo = (props) => {
                   City
                 </label>
                 <input
+                  required
                   className="form-control"
                   name="contactInfo.address.city"
                   type="text"
@@ -108,6 +114,7 @@ const ContactInfo = (props) => {
                   Street
                 </label>
                 <input
+                  required
                   className="form-control"
                   name="contactInfo.address.street"
                   type="text"
@@ -137,7 +144,7 @@ const ContactInfo = (props) => {
   );
   function handleSubmit(e) {
     e.preventDefault();
-    e.target.reset();
+    // e.target.reset();
     setAvailable(true);
     getContactInfo(formik.values.contactInfo);
   }

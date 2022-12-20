@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import Header from "./Header";
 
 const Welcome = () => {
+
   return (
     <React.Fragment>
       <div className="masterClass">

@@ -135,7 +135,7 @@ class Master extends Component {
     this.state.cvProps.experience.endDate.push(endDate);
     this.state.cvProps.experience.aboutTheWork.push(aboutTheWork);
     this.setState({ cvProps: this.state.cvProps });
-    console.log(this.state.cvProps);
+    // console.log(this.state.cvProps);
   };
   getEducation = (education) => {
     const degree = education.degree;
@@ -155,7 +155,7 @@ class Master extends Component {
     const objective = skills.skills.objective;
     this.state.cvProps.skills.objective = objective;
     this.setState({ cvProps: this.state.cvProps });
-    console.log(this.state.cvProps);
+    // console.log(this.state.cvProps);
   };
   getlanguageObj = (languageObj) => {
     this.state.cvProps.skills.language.push(languageObj.language);
@@ -166,7 +166,7 @@ class Master extends Component {
     this.state.cvProps.skills.skillTitle.push(skillObj.skillTitle);
     this.state.cvProps.skills.skillDescription.push(skillObj.SkillDescription);
     this.setState({ cvProps: this.state.cvProps });
-    console.log(this.state.cvProps);
+    // console.log(this.state.cvProps);
   };
   getDesign = (design) => {
     this.state.cvProps.design = design;
